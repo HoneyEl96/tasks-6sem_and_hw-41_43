@@ -186,21 +186,21 @@
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
 Console.WriteLine("Введите b1-координату"); 
-int b1 = Convert.ToInt32(Console.ReadLine());
+double b1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите k1-координату");
-int k1 = Convert.ToInt32(Console.ReadLine());
+double k1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите b2-координату");
-int b2 = Convert.ToInt32(Console.ReadLine()); 
+double b2 = Convert.ToInt32(Console.ReadLine()); 
 Console.WriteLine("Введите k2-координату"); 
-int k2 = Convert.ToInt32(Console.ReadLine());
+double k2 = Convert.ToInt32(Console.ReadLine());
 
 // k1 * x + b1 = k2 * x + b2
 // (k1 - k2) * x = b2 - b1
 // x = (b2 - b1) / (k1 - k2)
 // y = k1 * x + b1
 
-int k3 = k1 - k2;
-int b3 = b2 - b1;
+double k3 = k1 - k2;
+double b3 = b2 - b1;
 double x = b3 / k3;
 double z = k1 * x;
 double y = z + b1;
